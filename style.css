@@ -1,0 +1,147 @@
+h1{
+    text-align:center;
+}
+#contents {
+    text-align: center;
+}
+
+h4,h6{
+    margin: 0;
+}
+
+.displayContent{
+    width:300px;
+    float:left;
+    margin:30px;
+    padding:10px;
+    height:550px;
+    margin-top:50px;
+    border:2px solid black;
+    background-color:gray;
+    border-radius:25px;
+}
+
+p {
+    font-size: 12px;
+}
+
+img{
+    border-radius:25px;
+}
+
+/* media queries */
+
+/*smart phones and smaller screen devices */
+@media (min-width: 50px) and (max-width: 374px){
+    body{
+        background-color:black;
+    }
+    #title{
+        color:white;
+    }
+
+    .contents{
+        width:100%;
+    }
+    .displayContent{
+        width:85%;
+        overflow-y: auto 0;
+        margin: 10px;
+        height:auto 0;
+        background-color:white;
+
+    }
+    img{
+        width:95%;
+        height:240px;
+    }
+}
+
+/*medium screen sizes to tablets*/
+@media (min-width: 375px) and (max-width: 768px){
+    body{
+        background-color:black;
+    }
+    #title{
+        color:white;
+    }
+    .displayContent{
+        width:93%;
+        overflow-y: auto 0;
+        margin: 0px;
+        height:auto 0;
+        background-color:white;
+    }
+    img{
+        width:200px;
+        height:200px;
+    }
+}
+/*tablet sizes*/
+@media (min-width:767px) and (max-width: 954px){
+    body{
+        background-color:black;
+    }
+    #title{
+        color:white;
+    }
+    .displayContent{
+        width:30%;
+        margin: 0px;
+        height:auto 0;
+        background-color:white;
+    }
+    img{
+        margin:0px;
+        width:95%;
+    }
+}
+
+/*laptop*/
+@media (min-width:955px) and (max-width:1024px){
+    .displayContent{
+        width:280px;
+        margin:5px;
+    }
+    img{
+        margin:0px;
+        width:280px;
+    }
+}
+/*large laptops*/
+@media (min-width:1440px){
+    .displayContent{
+        width:300px;
+        margin:10px;
+        margin-left:20px;
+    }
+}
+/*desktop*/
+@media (min-width:2560px){
+    .displayContent{
+        margin:50px;
+        /* margin-left:130px;
+        margin-right:100px; */
+        width:450px;
+        height:1050px;
+        padding:40px;
+    }
+    
+    h1{
+        font-size:60px;
+    }
+
+    h4{
+        font-size:40px;
+    }
+    h6{
+        font-size:30px;
+    }
+    p{
+        font-size:21px;
+    }
+    img{
+        width:450px;
+        height:450px;
+    }
+}
